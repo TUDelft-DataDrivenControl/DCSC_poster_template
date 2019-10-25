@@ -1,5 +1,5 @@
 # DCSC_poster_template
-A LaTeX template for DCSC posters from the TU Delft.
+A LaTeX template for posters from the DCSC at TU Delft
 
 
 ## Getting started
