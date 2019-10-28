@@ -18,11 +18,12 @@ The LaTeX document is largely self-explanatory.
 
 ## Information
 Author: Bart Doekemeijer
-
-Last updated: October 25, 2019
+Institute: Delft Center for Systems and Control, TU Delft
 
 
 ## Changelog
+    28/10/2019: Fix margins and update bottom banner
+        
     25/10/2019: Initial upload
         * Initial set-up of the LaTeX document
         * Addition of non-uniform backgrounds for header, footer and sections
