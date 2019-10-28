@@ -29,7 +29,6 @@
 \ProcessOptions
 
 \LoadClass[portrait]{a0poster}
-\RequirePackage{color}
 \RequirePackage{pstricks}
 \RequirePackage{pst-grad}
 \RequirePackage{pstricks-add}
@@ -45,10 +44,12 @@
 % Set text margins
 \usepackage{geometry}
 \geometry{
-	left=30mm,
-	right=20mm,
+	bindingoffset=0mm,
+	left=25mm,
+	right=-10mm,
 	top=20mm,
-	bottom=100mm
+	bottom=100mm,
+%	showframe
 }
 
 

@@ -6,9 +6,10 @@
 %\documentclass[wind]{tudposter} % Template with wind turbines
 
 \usepackage{tikz}
-\usetikzlibrary{arrows,shadows,calc}
+\usetikzlibrary{arrows,shadows,calc,positioning}
 \usepackage{multicol} % use multiple columns
 \usepackage{graphicx}
+\usepackage{xcolor,pgf}
 \usepackage{caption}
 \usepackage{enumitem}
 \columnsep=100pt      % spacing between the columns of text
@@ -96,14 +97,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet eros
 \end{multicols}
 
 % Bottom banner with information about the software and a QR code. This could also be a personal website or something linked to your research. You can create your own QR codes at https://www.qr-code-generator.com.
-\vspace{35mm}
-\begin{tabular}{m{7cm} m{54cm}}
-\includegraphics[width=7cm,trim=0 4cm 0 0]{images/qrcode.png} & \fbox{\begin{minipage}{\linewidth} \vspace{5mm} 
-\centering
-\begin{minipage}{0.97\linewidth} % Add horizontal spacing between box and text
-\Large{\textit{The software tools presented are created by the Data-Driven Controls group of the TU Delft. Our software tools are developed, maintained and shared on our publicly available Github repository. You can find our tools at  \textcolor{tudblue}{https://github.com/TUDelft-DataDrivenControl}.}}\end{minipage}
+\vspace{22mm}
+\begin{center}
+	\begin{minipage}[b]{66mm}
+		\includegraphics[width=\linewidth]{images/qrcode.png} 
+	\end{minipage}%
+\begin{minipage}[b]{52cm}
+\fbox{\begin{tikzpicture}
+\node[preaction={fill=white,fill opacity=0.75}] (c) { \begin{minipage}{50cm} \Large{\textit{The software tools presented are created by the Data-Driven Controls group of the TU Delft. Our software tools are developed, maintained and shared on our publicly available Github repository. You can find our tools at  \textcolor{tudblue}{https://github.com/TUDelft-DataDrivenControl}.}} \end{minipage}};
+\end{tikzpicture}}
 \vspace{5mm}
-\end{minipage}}
-\end{tabular}
+\end{minipage}
+\end{center}
+
+%\begin{center}
+%\begin{tabular}{m{7cm} m{54cm}}
+%\includegraphics[width=7cm,trim=0 4cm 0 0]{images/qrcode.png} & \fbox{\begin{minipage}{\linewidth} \vspace{5mm} 
+%\centering
+%\begin{minipage}{0.97\linewidth} % Add horizontal spacing between box and text
+%\Large{\textit{The software tools presented are created by the Data-Driven Controls group of the TU Delft. Our software tools are developed, maintained and shared on our publicly available Github repository. You can find our tools at  \textcolor{tudblue}{https://github.com/TUDelft-DataDrivenControl}.}}\end{minipage}
+%\vspace{5mm}
+%\end{minipage}}
+%\end{tabular}
+%\end{center}
 
 \end{document}
