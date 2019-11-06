@@ -103,6 +103,12 @@
  \rput[lb](65,-114){\includegraphics[height=220mm]{images/smallturbines.pdf}} % Image with blue wind turbines on the bottom
  \fi  
  \rput[tl](-3cm,-110cm){\includegraphics[width=100cm]{images/wigglylines.pdf}} % Image with pattern and gradient
-  \rput[bl](71,-118.6){\includegraphics[height=85mm]{images/tudlogo_white.eps}} % TUDelft logo
-  \rput[bl](-1,-117.4){\includegraphics[height=75mm]{images/DCSC_logoWhite.png}} % DCSC logo
+ \if@windtemplate
+ \rput[bl](68,-118.6){\includegraphics[height=85mm]{images/tudwindlogo_white.eps}} % TUDelft-wind logo
+ \else
+ \rput[bl](71,-118.6){\includegraphics[height=85mm]{images/tudlogo_white.eps}} % TUDelft logo
+ \fi
+ \rput[bl](-0.5,-116.4){\includegraphics[height=50mm]{images/ddclogo.png}} % DCSC logo
+ %\rput[bl](-1,-117.4){\includegraphics[height=75mm]{images/DCSC_logoWhite.png}} % DCSC logo
+ \rput[bl](7.5,-117.5){\includegraphics[height=75mm]{images/DCSC_logoWhite.png}} % DCSC logo
 }
