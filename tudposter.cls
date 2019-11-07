@@ -108,7 +108,7 @@
  \else
  \rput[bl](71,-118.6){\includegraphics[height=85mm]{images/tudlogo_white.eps}} % TUDelft logo
  \fi
- \rput[bl](-0.5,-116.4){\includegraphics[height=50mm]{images/ddclogo.png}} % DCSC logo
+ \rput[bl](-0.5,-116.4){\includegraphics[height=50mm]{images/ddclogo.png}} % DDC logo
  %\rput[bl](-1,-117.4){\includegraphics[height=75mm]{images/DCSC_logoWhite.png}} % DCSC logo
  \rput[bl](7.5,-117.5){\includegraphics[height=75mm]{images/DCSC_logoWhite.png}} % DCSC logo
 }
