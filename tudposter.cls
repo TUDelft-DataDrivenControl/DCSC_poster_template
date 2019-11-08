@@ -28,7 +28,7 @@
 %\ExecuteOptions{}
 \ProcessOptions
 
-\LoadClass[portrait]{a0poster}
+\LoadClass[portrait,a0]{a0poster}
 \RequirePackage{pstricks}
 \RequirePackage{pst-grad}
 \RequirePackage{pstricks-add}
@@ -46,9 +46,9 @@
 \geometry{
 	bindingoffset=0mm,
 	left=25mm,
-	right=-10mm,
+	right=25mm,
 	top=20mm,
-	bottom=100mm,
+	bottom=75mm,
 %	showframe
 }
 
@@ -100,15 +100,15 @@
 % \psframe[linestyle=none,fillstyle=solid,fillcolor=tudblue](-5,15)(82,-19) % Uniform colorbox at top
 % \psframe[linestyle=none,fillstyle=solid,fillcolor=tudblue](-3.1,-107)(82,-116) % Uniform colorbox at bottom
  \if@windtemplate
- \rput[lb](65,-114){\includegraphics[height=220mm]{images/smallturbines.pdf}} % Image with blue wind turbines on the bottom
+ \rput[lb](60,-114){\includegraphics[height=220mm]{images/smallturbines.pdf}} % Image with blue wind turbines on the bottom
  \fi  
  \rput[tl](-3cm,-110cm){\includegraphics[width=100cm]{images/wigglylines.pdf}} % Image with pattern and gradient
  \if@windtemplate
- \rput[bl](68,-118.6){\includegraphics[height=85mm]{images/tudwindlogo_white.eps}} % TUDelft-wind logo
+ \rput[bl](64,-118.0){\includegraphics[height=75mm]{images/tudwindlogo_white.eps}} % TUDelft-wind logo
  \else
- \rput[bl](71,-118.6){\includegraphics[height=85mm]{images/tudlogo_white.eps}} % TUDelft logo
+ \rput[bl](67,-118.0){\includegraphics[height=75mm]{images/tudlogo_white.eps}} % TUDelft logo
  \fi
- \rput[bl](-0.5,-116.4){\includegraphics[height=50mm]{images/ddclogo.png}} % DDC logo
+ \rput[bl](-0.5,-115.5){\includegraphics[height=40mm]{images/ddclogo.png}} % DDC logo
  %\rput[bl](-1,-117.4){\includegraphics[height=75mm]{images/DCSC_logoWhite.png}} % DCSC logo
- \rput[bl](7.5,-117.5){\includegraphics[height=75mm]{images/DCSC_logoWhite.png}} % DCSC logo
+ \rput[bl](7.5,-116.6){\includegraphics[height=65mm]{images/DCSC_logoWhite.png}} % DCSC logo
 }
